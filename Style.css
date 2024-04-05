@@ -1,0 +1,161 @@
+/*---------------ESTILIZAÇÃO DO HTML EM GERAL*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(0deg, rgb(1, 77, 125), rgb(1, 18, 48));
+    background-size: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body:hover {
+    overflow-y: visible;
+}
+
+
+/*---------------ESTILIZAÇÃO DA MAIN---------------*/
+
+main {
+    position: relative;
+}
+
+.FUNDOAPRESENTAÇÂO {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.APRESENTACAO {
+    color: white;
+    font-size: 40px;
+    width: 1050px;
+    height: 500px;
+}
+
+.AREA {
+    font-size: 200px;
+    line-height: 0.7;
+    font-style: inherit;
+    width: auto;
+}
+
+.DEV {
+    color: white;
+    font-size: 110px;
+    display: flex;
+    height: auto;
+    text-align: bottom;
+    padding-top: 35px;
+}
+
+.SUBTITULO {
+    color: white;
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+}
+.LINHA1 {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.LINHA2 {
+    width: 60%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.ICONES {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+    width: 400px;
+}
+
+.ICONES a {
+    margin-right: 20px;
+}
+
+.ICONES img {
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.IMGICONE {
+    height: 90px;
+    width: 90px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.IMGICONE:hover {
+    transform: translateY(-10px) scale(1.1);
+}
+
+.GERALBOTAO {
+    position: absolute;
+    bottom: 0;
+}
+
+.LINKBOTAO {
+    width: 45px;
+    height: 45px;
+}
+
+.BOTAODESCER {
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*---------------ESTILIZAÇÃO DOS PROJETOS---------------*/
+
+.FUNDOPROJETOS {
+    background: linear-gradient(0deg, rgb(50, 0, 73), rgb(1, 77, 125));
+
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.PROJETOS {
+    background-color: rgb(213, 210, 206);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.GERALPROJETO {
+    display: flex;
+}
+
+.LINKPROJETO {
+    position: relative;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(0deg, rgb(1, 77, 125), rgb(1, 18, 48));
+        background-size: auto;
+        margin: 0;
+        height: 100vh;
+        overflow: auto;
+    }
+}
